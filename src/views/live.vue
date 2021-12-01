@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-    <h1>Live</h1>
   <div class="container p-2">
 <div class="card">
   <div class="card-header">
