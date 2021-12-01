@@ -22,6 +22,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Packages
 ```
 npm install axios
-```
+
 npm install moment
 ```
