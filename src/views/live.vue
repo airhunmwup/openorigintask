@@ -1,5 +1,5 @@
 <template>
-  <div class="container pb-4">
+  <div class="pb-4">
     <div class="card">
       <div class="card-header">
           <router-link
@@ -25,28 +25,27 @@
             <tbody>
               <tr>
                 <td class="text-start">
-                  <span class="m-1"
+                  <span class="mr-1"
                     >{{ moment(item.fixture.timestamp).format("HH:mm") }}
                   </span> 
                   <span class="text-danger">
                      {{ item.fixture.status.elapsed }}'</span
                   >
                 </td>
-                <td  class="text-end">
+                <td  class="text-center">
                   <span
                     >{{ item.teams.home.name }}
                     <img style="height: 15px" :src="item.teams.home.logo"
                   /></span>
                 </td>
                 <td  class="text-center">{{ item.goals.home }} - {{ item.goals.away }}</td>
-                <td  class="text-start">
+                <td  class="text-center">
                   <span
                     ><img style="height: 15px" :src="item.teams.away.logo" />
                     {{ item.teams.away.name }}</span
                   >
                 </td>
                 <td>
-                  <button class="btn btn-sm btn-success border rounded">ODDs</button>
                 </td>
               </tr>
             </tbody>
@@ -76,7 +75,7 @@ export default {
         headers: {
           "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
           "x-rapidapi-key":
-            "cfe1fd719emshc0e80154b5d46f5p143b83jsnb450ad925850",
+            "fccd5b8c0dmsh391cbd2abad26fdp1b46cajsn9db6e1b65cdf",
         },
       };
 
